@@ -16,6 +16,7 @@
 
 # Ignore Blender backups
 *.blend1
+*.blend1.meta
 
 # Rider files
 .idea/
