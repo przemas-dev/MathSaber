@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Xml;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestionManager : MonoBehaviour
 {
     public Transform[] SpawnPoints = new Transform[3];
     public GameObject AnswerCubePrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,21 +23,31 @@ public class QuestionManager : MonoBehaviour
         
     }
 
-    private Question GetNewQuestion()
+    private Question GetNewQuestion(List<QuestionsXML> QuestionsList)
     {
-        //TODO: real generating questions
-        return new Question()
+        int randQuestion = Random.Range(0, QuestionsList.Count);
+
+        Question question = new Question()
         {
-            QuestionText = "Ile to 2 x 2?",
-            AnswerTexts = new[] { "2", "4", "6" },
-            CorrectAnswer = 1
+            QuestionText = QuestionsList[randQuestion].question,
+            AnswerTexts = new[]
+            {
+                QuestionsList[randQuestion].ans1,
+                QuestionsList[randQuestion].ans2,
+                QuestionsList[randQuestion].ans3
+            },
+            CorrectAnswer = QuestionsList[randQuestion].correct
         };
+
+        QuestionsList.RemoveAt(randQuestion);
+
+        return question;
     }
     
     
-    public Question SpawnNewQuestion(float velocity)
+    public Question SpawnNewQuestion(float velocity, List<QuestionsXML> QuestionsList)
     {
-        var question = GetNewQuestion();
+        var question = GetNewQuestion(QuestionsList);
         
         for (var i = 0; i < SpawnPoints.Length; i++)
         {
@@ -45,7 +59,7 @@ public class QuestionManager : MonoBehaviour
             question.AnswerCubes[i] = answerCube;
         }
 
-        question.AnswerCubes[question.CorrectAnswer].IsCorrect = true;
+        question.AnswerCubes[question.CorrectAnswer-1].IsCorrect = true;
         return question;
     }
 }
