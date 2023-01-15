@@ -10,6 +10,7 @@ public class AnswerCube : MonoBehaviour
 
     public float Velocity;
     public TextMeshPro AnswerTextMesh;
+    public bool IsCorrect;
     public string AnswerText
     {
         set => AnswerTextMesh.text = value;
