@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public QuestionManager QuestionManager;
     [HideInInspector]
     public int Points = 0;
     public Question ActiveQuestion;
@@ -22,11 +23,14 @@ public class GameManager : MonoBehaviour
     {
         if (ActiveQuestion == null)
         {
-            ActiveQuestion = new Question();
-            foreach (var spawnPoint in SpawnPoints)
+            ActiveQuestion = QuestionManager.GetQuestion();
+            for (var i = 0; i < SpawnPoints.Length; i++)
             {
+                var spawnPoint = SpawnPoints[i];
                 var go = Instantiate(AnswerCubePrefab, spawnPoint.position, Quaternion.identity);
-                go.GetComponent<AnswerCube>().Velocity = Velocity;
+                var answerCube = go.GetComponent<AnswerCube>();
+                answerCube.Velocity = Velocity;
+                answerCube.AnswerText = ActiveQuestion.AnswerTexts[i];
             }
         }
     }

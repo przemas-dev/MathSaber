@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class AnswerCube : MonoBehaviour
@@ -8,6 +9,11 @@ public class AnswerCube : MonoBehaviour
 
 
     public float Velocity;
+    public TextMeshPro AnswerTextMesh;
+    public string AnswerText
+    {
+        set => AnswerTextMesh.text = value;
+    }
     void Start()
     {
         
