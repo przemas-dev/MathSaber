@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     List<QuestionsXML> questionsXML;
     public TextMeshPro QuestionLabel;
     public TextMeshPro PointsLabel;
+    public bool delayBetweenStages = false;
     private int _points;
     public int Points
     {
@@ -37,14 +38,14 @@ public class GameManager : MonoBehaviour
     private float _timeSinceLastQuestion = 0;
     void Start()
     {
-        currentStage = 2;
-        Stage(currentStage);
+        currentStage = 1;
+        questionsXML = Stage(currentStage);
         StartNewGame();
     }
 
     private void StartNewGame()
     {
-        ActiveQuestion = QuestionManager.SpawnNewQuestion(Velocity, questionsXML);
+        ActiveQuestion = QuestionManager.SpawnNewQuestion(Velocity, questionsXML, currentStage);
         QuestionLabel.text = ActiveQuestion.QuestionText;
         Points = 0;
     }
@@ -52,18 +53,19 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (questionsXML.Count <= 0)
+        {
+            currentStage++;
+            questionsXML = Stage(currentStage);
+        }
+
         _timeSinceLastQuestion += Time.deltaTime;
         if (_timeSinceLastQuestion >= TimeBetweenQuestion)
         {
-            Questions.Enqueue(QuestionManager.SpawnNewQuestion(Velocity, questionsXML));
+            Questions.Enqueue(QuestionManager.SpawnNewQuestion(Velocity, questionsXML, currentStage));
             _timeSinceLastQuestion = 0f;
         }
-        
-        if(questionsXML.Count <= 0)
-        {
-            currentStage++;
-            Stage(currentStage);
-        }
+           
     }
 
     private void IncreaseSpeed(float value = 0.5f)
@@ -78,7 +80,7 @@ public class GameManager : MonoBehaviour
     public void AnswerActiveQuestion(bool isCorrect)
     {
         Points += isCorrect ? 1 : 0;
-        Debug.Log(isCorrect ? "Correct Answer!" : "Incorrect Answer!");
+        //Debug.Log(isCorrect ? "Correct Answer!" : "Incorrect Answer!");
         if (isCorrect)
         {
             IncreaseSpeed();
@@ -92,17 +94,19 @@ public class GameManager : MonoBehaviour
         QuestionLabel.text = ActiveQuestion.QuestionText;
     }
 
-    public void Stage(int currentStage)
+    public List<QuestionsXML> Stage(int currentStage)
     {
         string xmlString = File.ReadAllText($"Assets/Resources/XML/stage{currentStage}.xml");
         XmlSerializer serializer = new XmlSerializer(typeof(Quiz));
+        List<QuestionsXML> questions;
 
         using (StringReader reader = new StringReader(xmlString))
         {
             Quiz quiz = (Quiz)serializer.Deserialize(reader);
 
-            questionsXML = quiz.questionsXML;
+            questions = quiz.questionsXML;
         }
+        return questions;
     }
 
 }
