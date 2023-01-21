@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public float Velocity = 2f;
     public float TimeBetweenQuestion => DistanceBetweenQuestioin / Velocity;
     public Queue<Question> Questions = new();
-    List<QuestionsXML> questionsXML;
+    List<Question> questions;
     public TextMeshPro QuestionLabel;
     public TextMeshPro PointsLabel;
     public bool delayBetweenStages = false;
@@ -39,13 +39,13 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentStage = 2;
-        questionsXML = Stage(currentStage);
+        questions = Stage(currentStage);
         StartNewGame();
     }
 
     private void StartNewGame()
     {
-        ActiveQuestion = QuestionManager.SpawnNewQuestion(Velocity, questionsXML, currentStage);
+        ActiveQuestion = QuestionManager.SpawnNewQuestion(Velocity, questions, currentStage);
         QuestionLabel.text = ActiveQuestion.QuestionText;
         Points = 0;
     }
@@ -53,16 +53,16 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (questionsXML.Count <= 0)
+        if (questions.Count <= 0)
         {
             currentStage++;
-            questionsXML = Stage(currentStage);
+            questions = Stage(currentStage);
         }
 
         _timeSinceLastQuestion += Time.deltaTime;
         if (_timeSinceLastQuestion >= TimeBetweenQuestion)
         {
-            Questions.Enqueue(QuestionManager.SpawnNewQuestion(Velocity, questionsXML, currentStage));
+            Questions.Enqueue(QuestionManager.SpawnNewQuestion(Velocity, questions, currentStage));
             _timeSinceLastQuestion = 0f;
         }
            
@@ -94,17 +94,17 @@ public class GameManager : MonoBehaviour
         QuestionLabel.text = ActiveQuestion.QuestionText;
     }
 
-    public List<QuestionsXML> Stage(int currentStage)
+    public List<Question> Stage(int currentStage)
     {
         string xmlString = File.ReadAllText($"Assets/Resources/XML/stage{currentStage}.xml");
-        XmlSerializer serializer = new XmlSerializer(typeof(Quiz));
-        List<QuestionsXML> questions;
+        XmlSerializer serializer = new XmlSerializer(typeof(Stage));
+        List<Question> questions;
 
         using (StringReader reader = new StringReader(xmlString))
         {
-            Quiz quiz = (Quiz)serializer.Deserialize(reader);
+            Stage stage = (Stage)serializer.Deserialize(reader);
 
-            questions = quiz.questionsXML;
+            questions = stage.Questions;
         }
         return questions;
     }

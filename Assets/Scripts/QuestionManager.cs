@@ -27,7 +27,7 @@ public class QuestionManager : MonoBehaviour
 
     }
 
-    private Question GetNewQuestion(List<QuestionsXML> QuestionsList)
+    private Question GetNewQuestion(List<Question> QuestionsList)
     {
         if (stage != 1)
         {
@@ -44,17 +44,7 @@ public class QuestionManager : MonoBehaviour
             counterFirstStage++;
         }
 
-        Question question = new Question()
-        {
-            QuestionText = QuestionsList[randQuestion].question,
-            AnswerTexts = new[]
-            {
-                QuestionsList[randQuestion].ans1,
-                QuestionsList[randQuestion].ans2,
-                QuestionsList[randQuestion].ans3
-            },
-            CorrectAnswer = QuestionsList[randQuestion].correct
-        };
+        var question = QuestionsList[randQuestion];
 
         if (stage != 1) 
         {
@@ -74,7 +64,7 @@ public class QuestionManager : MonoBehaviour
     }
     
     
-    public Question SpawnNewQuestion(float velocity, List<QuestionsXML> QuestionsList, int currentStage)
+    public Question SpawnNewQuestion(float velocity, List<Question> QuestionsList, int currentStage)
     {
         stage = currentStage; 
         var question = GetNewQuestion(QuestionsList);

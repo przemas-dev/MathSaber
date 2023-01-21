@@ -1,143 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<QUIZ>
-	<q>
-		<question>Ile to 2x2?</question>
-		<ans1>4</ans1>
-		<ans2>6</ans2>
-		<ans3>8</ans3>
-		<correct>1</correct>
-	</q>
-	<q>
-		<question>Ile to 3x5?</question>
-		<ans1>10</ans1>
-		<ans2>15</ans2>
-		<ans3>20</ans3>
-		<correct>2</correct>
-	</q>
-	<q>
-		<question>Ile to 8x7?</question>
-		<ans1>57</ans1>
-		<ans2>48</ans2>
-		<ans3>63</ans3>
-		<correct>2</correct>
-	</q>
-	<q>
-		<question>Ile to 9x7?</question>
-		<ans1>62</ans1>
-		<ans2>59</ans2>
-		<ans3>63</ans3>
-		<correct>3</correct>
-	</q>
-	<q>
-		<question>Ile to 3x6?</question>
-		<ans1>18</ans1>
-		<ans2>21</ans2>
-		<ans3>15</ans3>
-		<correct>1</correct>
-	</q>
-	<q>
-		<question>Ile to 10:2?</question>
-		<ans1>2</ans1>
-		<ans2>7</ans2>
-		<ans3>5</ans3>
-		<correct>3</correct>
-	</q>
-	<q>
-		<question>Ile to 54:9?</question>
-		<ans1>7</ans1>
-		<ans2>5</ans2>
-		<ans3>6</ans3>
-		<correct>3</correct>
-	</q>
-	<q>
-		<question>Ile to 121:11?</question>
-		<ans1>11</ans1>
-		<ans2>13</ans2>
-		<ans3>12</ans3>
-		<correct>1</correct>
-	</q>
-	<q>
-		<question>Ile to 95:5?</question>
-		<ans1>15</ans1>
-		<ans2>19</ans2>
-		<ans3>27</ans3>
-		<correct>2</correct>
-	</q>
-	<q>
-		<question>Ile to 88:22?</question>
-		<ans1>8</ans1>
-		<ans2>6</ans2>
-		<ans3>4</ans3>
-		<correct>3</correct>
-	</q>
-	<q>
-		<question>Ile to 52-48?</question>
-		<ans1>8</ans1>
-		<ans2>4</ans2>
-		<ans3>9</ans3>
-		<correct>2</correct>
-	</q>
-	<q>
-		<question>Ile to 37-17?</question>
-		<ans1>27</ans1>
-		<ans2>17</ans2>
-		<ans3>20</ans3>
-		<correct>3</correct>
-	</q>
-	<q>
-		<question>Ile to 134-5?</question>
-		<ans1>129</ans1>
-		<ans2>130</ans2>
-		<ans3>128</ans3>
-		<correct>1</correct>
-	</q>
-	<q>
-		<question>Ile to 1000-1?</question>
-		<ans1>999</ans1>
-		<ans2>998</ans2>
-		<ans3>997</ans3>
-		<correct>1</correct>
-	</q>
-	<q>
-		<question>Ile to 69-51?</question>
-		<ans1>17</ans1>
-		<ans2>23</ans2>
-		<ans3>18</ans3>
-		<correct>3</correct>
-	</q>
-	<q>
-		<question>Ile to 21+37?</question>
-		<ans1>58</ans1>
-		<ans2>48</ans2>
-		<ans3>68</ans3>
-		<correct>1</correct>
-	</q>
-	<q>
-		<question>Ile to 3+5?</question>
-		<ans1>9</ans1>
-		<ans2>8</ans2>
-		<ans3>10</ans3>
-		<correct>2</correct>
-	</q>
-	<q>
-		<question>Ile to 8+7?</question>
-		<ans1>16</ans1>
-		<ans2>15</ans2>
-		<ans3>17</ans3>
-		<correct>2</correct>
-	</q>
-	<q>
-		<question>Ile to 77+33?</question>
-		<ans1>100</ans1>
-		<ans2>105</ans2>
-		<ans3>110</ans3>
-		<correct>3</correct>
-	</q>
-	<q>
-		<question>Ile to 54+34?</question>
-		<ans1>80</ans1>
-		<ans2>88</ans2>
-		<ans3>84</ans3>
-		<correct>3</correct>
-	</q>
-</QUIZ>
+<Stage>
+    <Question>
+        <QuestionText>Ile to 2x2?</QuestionText>
+        <AnswerTexts>
+            <string>4</string>
+            <string>6</string>
+            <string>8</string>
+        </AnswerTexts>
+        <CorrectAnswer>1</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 3x5?</QuestionText>
+        <AnswerTexts>
+            <string>10</string>
+            <string>15</string>
+            <string>20</string>
+        </AnswerTexts>
+        <CorrectAnswer>2</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 8x7?</QuestionText>
+        <AnswerTexts>
+            <string>57</string>
+            <string>48</string>
+            <string>63</string>
+        </AnswerTexts>
+        <CorrectAnswer>2</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 9x7?</QuestionText>
+        <AnswerTexts>
+            <string>62</string>
+            <string>59</string>
+            <string>63</string>
+        </AnswerTexts>
+        <CorrectAnswer>3</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 3x6?</QuestionText>
+        <AnswerTexts>
+            <string>18</string>
+            <string>21</string>
+            <string>15</string>
+        </AnswerTexts>
+        <CorrectAnswer>1</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 10:2?</QuestionText>
+        <AnswerTexts>
+            <string>2</string>
+            <string>7</string>
+            <string>5</string>
+        </AnswerTexts>
+        <CorrectAnswer>3</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 54:9?</QuestionText>
+        <AnswerTexts>
+            <string>7</string>
+            <string>5</string>
+            <string>6</string>
+        </AnswerTexts>
+        <CorrectAnswer>3</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 121:11?</QuestionText>
+        <AnswerTexts>
+            <string>11</string>
+            <string>13</string>
+            <string>12</string>
+        </AnswerTexts>
+        <CorrectAnswer>1</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 95:5?</QuestionText>
+        <AnswerTexts>
+            <string>15</string>
+            <string>19</string>
+            <string>27</string>
+        </AnswerTexts>
+        <CorrectAnswer>2</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 88:22?</QuestionText>
+        <AnswerTexts>
+            <string>8</string>
+            <string>6</string>
+            <string>4</string>
+        </AnswerTexts>
+        <CorrectAnswer>3</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 52-48?</QuestionText>
+        <AnswerTexts>
+            <string>8</string>
+            <string>4</string>
+            <string>9</string>
+        </AnswerTexts>
+        <CorrectAnswer>2</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 37-17?</QuestionText>
+        <AnswerTexts>
+            <string>27</string>
+            <string>17</string>
+            <string>20</string>
+        </AnswerTexts>
+        <CorrectAnswer>3</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 134-5?</QuestionText>
+        <AnswerTexts>
+            <string>129</string>
+            <string>130</string>
+            <string>128</string>
+        </AnswerTexts>
+        <CorrectAnswer>1</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 1000-1?</QuestionText>
+        <AnswerTexts>
+            <string>999</string>
+            <string>998</string>
+            <string>997</string>
+        </AnswerTexts>
+        <CorrectAnswer>1</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 69-51?</QuestionText>
+        <AnswerTexts>
+            <string>17</string>
+            <string>23</string>
+            <string>18</string>
+        </AnswerTexts>
+        <CorrectAnswer>3</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 21+37?</QuestionText>
+        <AnswerTexts>
+            <string>58</string>
+            <string>48</string>
+            <string>68</string>
+        </AnswerTexts>
+        <CorrectAnswer>1</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 3+5?</QuestionText>
+        <AnswerTexts>
+            <string>9</string>
+            <string>8</string>
+            <string>10</string>
+        </AnswerTexts>
+        <CorrectAnswer>2</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 8+7?</QuestionText>
+        <AnswerTexts>
+            <string>16</string>
+            <string>15</string>
+            <string>17</string>
+        </AnswerTexts>
+        <CorrectAnswer>2</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 77+33?</QuestionText>
+        <AnswerTexts>
+            <string>100</string>
+            <string>105</string>
+            <string>110</string>
+        </AnswerTexts>
+        <CorrectAnswer>3</CorrectAnswer>
+    </Question>
+    <Question>
+        <QuestionText>Ile to 54+34?</QuestionText>
+        <AnswerTexts>
+            <string>80</string>
+            <string>88</string>
+            <string>84</string>
+        </AnswerTexts>
+        <CorrectAnswer>3</CorrectAnswer>
+    </Question>
+</Stage>
