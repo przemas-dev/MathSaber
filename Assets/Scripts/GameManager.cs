@@ -31,14 +31,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private int currentStage;
+    public int currentStage;
 
 
 
     private float _timeSinceLastQuestion = 0;
     void Start()
     {
-        currentStage = 1;
+        currentStage = 2;
         questionsXML = Stage(currentStage);
         StartNewGame();
     }
