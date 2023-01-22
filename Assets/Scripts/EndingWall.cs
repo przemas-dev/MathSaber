@@ -20,6 +20,7 @@ public class EndingWall : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        GameManager.ShowNextQuestion();
         Destroy(other.gameObject);
     }
 }

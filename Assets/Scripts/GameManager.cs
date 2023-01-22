@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
         ShowNextQuestion();
     }
 
-    private void ShowNextQuestion()
+    public void ShowNextQuestion()
     {
         ActiveQuestion = Questions.Dequeue();
         QuestionLabel.text = ActiveQuestion.QuestionText;

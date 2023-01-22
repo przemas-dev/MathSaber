@@ -23,8 +23,8 @@ public class LightSaber : MonoBehaviour
         if (other.gameObject.CompareTag("AnswerCube"))
         {
             var answerCube = other.GetComponent<AnswerCube>();
-            GameManager.AnswerActiveQuestion(answerCube.IsCorrect);
             Destroy(other.gameObject);
+            GameManager.AnswerActiveQuestion(answerCube.IsCorrect);
         }
     }
 }
