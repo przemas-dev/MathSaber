@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.099883005, g: 0.06909958, b: 0.079544544, a: 1}
+  m_IndirectSpecularColor: {r: 0.09982044, g: 0.06914479, b: 0.07947359, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -859,6 +859,7 @@ MonoBehaviour:
   QuestionManager: {fileID: 245687449}
   DistanceBetweenQuestioin: 20
   Velocity: 5
+  TimeBeforeStage: 10
   QuestionLabel: {fileID: 1244906781}
   PointsLabel: {fileID: 958532709}
   delayBetweenStages: 0
@@ -1784,7 +1785,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Here wil be displayed active question
+  m_text: Welcome in Math Saber!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
