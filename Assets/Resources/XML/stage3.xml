@@ -64,7 +64,7 @@
         <CorrectAnswer>2</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>_*23=69</QuestionText>
+        <QuestionText>_x23=69</QuestionText>
         <AnswerTexts>
             <string>3</string>
             <string>4</string>
@@ -103,7 +103,7 @@
         <QuestionText>7_3=21</QuestionText>
         <AnswerTexts>
             <string>+</string>
-            <string>*</string>
+            <string>x</string>
             <string>-</string>
         </AnswerTexts>
         <CorrectAnswer>2</CorrectAnswer>

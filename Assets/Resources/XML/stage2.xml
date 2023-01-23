@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Stage>
     <Question>
-        <QuestionText>Ile to 2x2?</QuestionText>
+        <QuestionText>2x2=</QuestionText>
         <AnswerTexts>
             <string>4</string>
             <string>6</string>
@@ -10,7 +10,7 @@
         <CorrectAnswer>1</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 3x5?</QuestionText>
+        <QuestionText>3x5=</QuestionText>
         <AnswerTexts>
             <string>10</string>
             <string>15</string>
@@ -19,7 +19,7 @@
         <CorrectAnswer>2</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 8x7?</QuestionText>
+        <QuestionText>8x7=</QuestionText>
         <AnswerTexts>
             <string>57</string>
             <string>48</string>
@@ -28,7 +28,7 @@
         <CorrectAnswer>2</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 9x7?</QuestionText>
+        <QuestionText>9x7=</QuestionText>
         <AnswerTexts>
             <string>62</string>
             <string>59</string>
@@ -37,7 +37,7 @@
         <CorrectAnswer>3</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 3x6?</QuestionText>
+        <QuestionText>3x6=</QuestionText>
         <AnswerTexts>
             <string>18</string>
             <string>21</string>
@@ -46,7 +46,7 @@
         <CorrectAnswer>1</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 10:2?</QuestionText>
+        <QuestionText>10:2=</QuestionText>
         <AnswerTexts>
             <string>2</string>
             <string>7</string>
@@ -55,7 +55,7 @@
         <CorrectAnswer>3</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 54:9?</QuestionText>
+        <QuestionText>54:9=</QuestionText>
         <AnswerTexts>
             <string>7</string>
             <string>5</string>
@@ -64,7 +64,7 @@
         <CorrectAnswer>3</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 121:11?</QuestionText>
+        <QuestionText>121:11=</QuestionText>
         <AnswerTexts>
             <string>11</string>
             <string>13</string>
@@ -73,7 +73,7 @@
         <CorrectAnswer>1</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 95:5?</QuestionText>
+        <QuestionText>95:5=</QuestionText>
         <AnswerTexts>
             <string>15</string>
             <string>19</string>
@@ -82,7 +82,7 @@
         <CorrectAnswer>2</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 88:22?</QuestionText>
+        <QuestionText>88:22=</QuestionText>
         <AnswerTexts>
             <string>8</string>
             <string>6</string>
@@ -91,7 +91,7 @@
         <CorrectAnswer>3</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 52-48?</QuestionText>
+        <QuestionText>52-48=</QuestionText>
         <AnswerTexts>
             <string>8</string>
             <string>4</string>
@@ -100,7 +100,7 @@
         <CorrectAnswer>2</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 37-17?</QuestionText>
+        <QuestionText>37-17=</QuestionText>
         <AnswerTexts>
             <string>27</string>
             <string>17</string>
@@ -109,7 +109,7 @@
         <CorrectAnswer>3</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 134-5?</QuestionText>
+        <QuestionText>134-5=</QuestionText>
         <AnswerTexts>
             <string>129</string>
             <string>130</string>
@@ -118,7 +118,7 @@
         <CorrectAnswer>1</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 1000-1?</QuestionText>
+        <QuestionText>1000-1=</QuestionText>
         <AnswerTexts>
             <string>999</string>
             <string>998</string>
@@ -127,7 +127,7 @@
         <CorrectAnswer>1</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 69-51?</QuestionText>
+        <QuestionText>69-51=</QuestionText>
         <AnswerTexts>
             <string>17</string>
             <string>23</string>
@@ -136,7 +136,7 @@
         <CorrectAnswer>3</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 21+37?</QuestionText>
+        <QuestionText>21+37=</QuestionText>
         <AnswerTexts>
             <string>58</string>
             <string>48</string>
@@ -145,7 +145,7 @@
         <CorrectAnswer>1</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 3+5?</QuestionText>
+        <QuestionText>3+5=</QuestionText>
         <AnswerTexts>
             <string>9</string>
             <string>8</string>
@@ -163,7 +163,7 @@
         <CorrectAnswer>2</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 77+33?</QuestionText>
+        <QuestionText>77+33=</QuestionText>
         <AnswerTexts>
             <string>100</string>
             <string>105</string>
@@ -172,7 +172,7 @@
         <CorrectAnswer>3</CorrectAnswer>
     </Question>
     <Question>
-        <QuestionText>Ile to 54+34?</QuestionText>
+        <QuestionText>54+34=</QuestionText>
         <AnswerTexts>
             <string>80</string>
             <string>88</string>
