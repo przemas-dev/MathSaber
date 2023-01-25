@@ -6,6 +6,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -106,7 +107,10 @@ public class GameManager : MonoBehaviour
     public void ShowStageNumber()
     {
         if(endOfGame)
+        {
             QuestionLabel.text = $"Thanks for playing!";
+            SceneManager.LoadScene("MainMenu");
+        }
         else
             QuestionLabel.text = $"Stage {currentStage}";
     }
